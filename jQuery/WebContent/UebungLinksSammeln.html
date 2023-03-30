@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>jQuery Links sammeln</title>
+<link rel="stylesheet" type="text/css" href="css/html5reset.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<script type="text/javascript"
+	src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		var links = $("a");
+		var footer = $("footer");
+		footer.append("<h1>Verwendete Links</h1>")
+		links.each(function(index){
+			footer.append("<p><b>" + $(this).text() + ": </b>" + $(this).attr('href') + "</p>")
+		})
+		var d = new Date();
+		var strDate = d.getDate() + "." + (d.getMonth()+1) + "." + d.getFullYear() + " um " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds();
+		footer.append("<p>&nbsp;</p><p>Erstellt am " + strDate + "</p>")
+	});
+</script>
+</head>
+<body>
+	<header>
+		<h1>Links sammeln</h1>
+	</header>
+	<section>
+		<p>
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+			commodo ligula eget dolor. Aenean massa. <a
+				href="http://www.galileo-design.de">Cum sociis</a> natoque penatibus
+			et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+			felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+			consequat massa quis enim. Donec pede justo, fringilla vel, aliquet
+			nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+			venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+			Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+			Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu,
+			consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in,
+			viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus
+			varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies
+			nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.
+			Etiam rhoncus. <a href="http://api.jquery.com/category/manipulation">Maecenas
+				tempus</a>, tellus eget condimentum rhoncus, sem quam semper libero, sit
+			amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel,
+			luctus pulvinar, hendrerit id, lorem. <a href="http://www.google.de">Maecenas
+				nec odio</a> et ante tincidunt tempus. Donec vitae sapien ut libero
+			venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros
+			faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
+			Donec sodales sagittis magna. Sed consequat, leo eget bibendum
+			sodales, augue velit cursus nunc, Lorem ipsum dolor sit amet,
+			consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <a
+				href="http://docs.jquery.com/Plugins/Authoring">Aenean massa</a>.
+			Cum sociis natoque penatibus et magnis dis parturient montes,
+			nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+			eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede
+			justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim
+			justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum
+			felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+			Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+			Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.
+			Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
+			Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
+			Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur
+			ullamcorper ultricies nisi. Nam eget dui. <a
+				href="http://www.blindtextgenerator.de">Etiam rhoncus</a>. Maecenas
+			tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit
+			amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel,
+			luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante
+			tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+			Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+			Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis
+			magna. Sed consequat, leo eget bibendum sodales, augue velit cursus
+			nunc,
+		</p>
+	</section>
+	<p></p>
+	<footer></footer>
+</body>
+</html>

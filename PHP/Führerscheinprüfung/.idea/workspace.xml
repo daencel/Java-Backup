@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d2b82cd5-8d1b-4ac8-87d1-aa96c7c6b3a3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP from XAMPP" />
+  <component name="ProjectId" id="1cPjWpak6cxX0WektE6HfITagjA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/inc/classes" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Daniel Lechner\PhpstormProjects\Führerscheinprüfung\inc\classes" />
+      <recent name="C:\Users\Daniel Lechner\PhpstormProjects\Führerscheinprüfung\scripts" />
+      <recent name="C:\Users\Daniel Lechner\PhpstormProjects\Führerscheinprüfung" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d2b82cd5-8d1b-4ac8-87d1-aa96c7c6b3a3" name="Default Changelist" comment="" />
+      <created>1590437156851</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1590437156851</updated>
+      <workItem from="1590437158132" duration="9040000" />
+      <workItem from="1590446270830" duration="3157000" />
+      <workItem from="1590495512707" duration="8578000" />
+      <workItem from="1590504407633" duration="4684000" />
+      <workItem from="1590529368433" duration="411000" />
+      <workItem from="1590529793141" duration="6459000" />
+      <workItem from="1600941412975" duration="109000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="987" y="110" key="#PHP" timestamp="1590437570609">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="987" y="110" key="#PHP/2560.-1.1463.891/0.0.2560.1040@0.0.2560.1040" timestamp="1590437570609" />
+    <state x="1060" y="274" key="FileChooserDialogImpl" timestamp="1590534007738">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1060" y="274" key="FileChooserDialogImpl/2560.-1.1463.891/0.0.2560.1040@0.0.2560.1040" timestamp="1590534007738" />
+    <state x="1114" y="443" key="NewPhpFileDialog" timestamp="1590527315711">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1114" y="443" key="NewPhpFileDialog/2560.-1.1463.891/0.0.2560.1040@0.0.2560.1040" timestamp="1590527315711" />
+    <state x="781" y="162" key="SettingsEditor" timestamp="1590437278889">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="781" y="162" key="SettingsEditor/2560.-1.1463.891/0.0.2560.1040@0.0.2560.1040" timestamp="1590437278889" />
+    <state x="1021" y="162" key="refactoring.ChangeSignatureDialog" timestamp="1590439643985">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1021" y="162" key="refactoring.ChangeSignatureDialog/2560.-1.1463.891/0.0.2560.1040@0.0.2560.1040" timestamp="1590439643985" />
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1590530586587">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="943" y="225" width="672" height="678" key="search.everywhere.popup/2560.-1.1463.891/0.0.2560.1040@0.0.2560.1040" timestamp="1590530586587" />
+  </component>
+</project>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="Daniel Lechner">
+<meta name="description" content="Homepage">
+<title>Übung zu HTML, CSS und JavaScript</title>
+<script type="text/javascript">
+	function time() {
+		document.getElementById("clock").innerHTML = hour + " : " + min + " : "
+				+ sec;
+	}
+	function showTime() {
+		var date = new Date();
+		var h = date.getHours();
+		var m = date.getMinutes();
+		var s = date.getSeconds();
+		var session = "AM";
+
+		if (h == 0) {
+			h = 12;
+		}
+
+		if (h > 12) {
+			h = h - 12;
+			session = "PM";
+		}
+
+		h = (h < 10) ? "0" + h : h;
+		m = (m < 10) ? "0" + m : m;
+		s = (s < 10) ? "0" + s : s;
+
+		var time = h + ":" + m + ":" + s + " " + session;
+		document.getElementById("ClockDisplay").innerText = time;
+		document.getElementById("ClockDisplay").textContent = time;
+
+		setTimeout(showTime, 1000);
+	}
+	function leave() {
+		return confirm("Seite verlassen?");
+	}
+</script>
+
+</head>
+<link rel="stylesheet" href="StylesCSS/html5reset.css">
+<link rel="stylesheet" href="StylesCSS/Styles.css">
+<body onload="showTime()">
+	<header>
+		<h1>Meine Homepage</h1>
+		<div id="ClockDisplay" class="clock"></div>
+		<table>
+			<tr>
+				<td style="vertical-align: top;">Daten:</td>
+				<td>
+					<table>
+						<tr>
+							<td>Vorname:</td>
+							<td>Daniel</td>
+							<td rowspan="5" align="center"><img src="Daniel.png"
+								alt="profilbild" width="200"></td>
+						</tr>
+						<tr>
+							<td>Nachname:</td>
+							<td>Lechner</td>
+						</tr>
+						<tr>
+							<td>Geburtsdatum:</td>
+							<td>04.20.2001</td>
+						</tr>
+						<tr>
+							<td>Wohnort:</td>
+							<td>Chicago, Illinois, USA</td>
+						</tr>
+						<tr>
+							<td>Erreichbar:</td>
+							<td><a href="mailto:danielferdinand.lechner@tfobz.net">danielferdinand.lechner@tfobz.net</a></td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+			<tr>
+				<td align="center"><a
+					href="https://www.google.de/search?source=hp&ei=CS1BXvSNM-rKrgT76LLIAQ&q=daniel+lechner&oq=daniel+lechner&gs_l=psy-ab.3..0l3j0i10l7.704.2389..2590...0.0..0.78.948.14......0....1..gws-wiz.........23%3A0g70g65g64g94g89g70g64g73g69g77j24%3A0g1g1g1g1g1g1g1g1g1g5.tn17-YKIHts&ved=0ahUKEwi0tu2L4MbnAhVqpYsKHXu0DBkQ4dUDCAc&uact=5"
+					target="_blank" onclick="return leave();"><img
+						src="OrdnerGeschlossen.png"
+						onmouseover="this.src='OrdnerOffen.png'"
+						onmouseleave="this.src='OrdnerGeschlossen.png'"
+						alt="geschlossener Ordner" width="40"> </a></td>
+				<td>Was sagt das Netzt über mich</td>
+			</tr>
+			<tr>
+				<td align="center"><a href="#meinleben"><img
+						src="OrdnerGeschlossen.png"
+						onmouseover="this.src='OrdnerOffen.png'"
+						onmouseleave="this.src='OrdnerGeschlossen.png'"
+						alt="geschlossener Ordner" width="40"></a></td>
+				<td>Mein Leben bis jetzt und in Zukunft</td>
+			</tr>
+			<tr>
+				<td align="center"><a href="#nichtarbeite"><img
+						src="OrdnerGeschlossen.png"
+						onmouseover="this.src='OrdnerOffen.png'"
+						onmouseleave="this.src='OrdnerGeschlossen.png'"
+						alt="geschlossener Ordner" width="40"></a></td>
+				<td>Wenn ich mal nicht arbeite</td>
+			</tr>
+			<tr>
+				<td align="center"><a href="#projekte"><img
+						src="OrdnerGeschlossen.png"
+						onmouseover="this.src='OrdnerOffen.png'"
+						onmouseleave="this.src='OrdnerGeschlossen.png'"
+						alt="geschlossener Ordner" width="40"></a></td>
+				<td>Meine Projekte zum Nachlesen und staunen</td>
+			</tr>
+		</table>
+		<hr>
+	</header>
+	<article id="meinleben">
+		<h2>Mein Leben bis jetzt und in Zukunft</h2>
+		<p>
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+			nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+			erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+			et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+			Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+			sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+			dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+			et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+			takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+			sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+			invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+			At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+			kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+			amet. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+			esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
+			at vero eros et accumsan et iusto odio dignissim qui blandit praesent
+			luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+			Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+			nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
+			volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+			ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+			consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+			velit esse molestie consequat, vel illum dolore eu feugiat nulla
+			facilisis at vero eros et accumsan et iusto odio dignissim qui
+			blandit praesent luptatum zzril delenit augue duis dolore te feugait
+			nulla facilisi. Nam liber tempor cum soluta nobis eleifend option
+			congue nihil imperdiet doming id quod mazim placerat facer possim
+			assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+			diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+			erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
+			tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+			consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate
+			velit esse molestie consequat, vel illum dolore eu feugiat nulla
+			facilisis. At vero eos et accusam et justo duo dolores et ea rebum.
+			Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum
+			dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+			elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+			magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+			justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+			takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+			sit amet, consetetur sadipscing elitr, At accusam aliquyam diam diam
+			dolore dolores duo eirmod eos erat, et nonumy sed tempor et et
+			invidunt justo labore Stet clita ea et gubergren, kasd magna no
+			rebum. sanctus sea sed takimata ut vero voluptua. est Lorem ipsum
+			dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
+			elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore
+			magna aliquyam erat. Consetetur sadipscing elitr, sed diam nonumy
+			eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed
+			diam voluptua. At vero eos et accusam et justo duo dolores et ea
+			rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+			ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+			sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+			dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+			et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+			takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor
+			sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+			invidunt ut labore et dolore <a
+				href="https://www.instagram.com/gozetta.del.nord" target="_blank">
+				@gozetta.del.nord</a> magna aliquyam erat, sed diam voluptua. At vero
+			eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+			gubergren, no sea takimata sanctus. Lorem ipsum dolor sit amet,
+			consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+			ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero
+			eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+			gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+			Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+			nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+			erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
+			et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+			Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+			sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+			dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+			et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea
+			takimata sanctus est Lorem ipsum dolor sit amet. Duis autem vel eum
+			iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+			vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
+			et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+			augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit
+			amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+			tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim
+			ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
+			lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
+			iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+			vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan
+			et iusto odio dignissim qui blandit praesent luptatum zzril delenit
+			augue duis dolore te feugait nulla facilisi. Nam liber tempor cum
+			soluta nobis eleifend option congue nihil imperdiet doming id quod
+			mazim placerat facer possim assum. Lorem ipsum dolor sit amet,
+			consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
+			ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim
+			veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
+			ut aliquip ex ea commodo.
+		</p>
+	</article>
+	<hr>
+	<article id="nichtarbeite">
+		<h2>Wenn ich mal nicht arbeite</h2>
+		<ul type="disc">
+			<li>Scopez</li>
+			<li>Bumbez</li>
+			<li>Musica</li>
+			<li>Skate</li>
+		</ul>
+	</article>
+	<hr>
+	<article id="projekte">
+		<h2>Meine Projekte zum Nachlesen und staunen</h2>
+		<ul type="disc">
+			<li><a href="Projekte/projekt1.html">Projekt 1</a></li>
+			<li><a href="Projekte/projekt2.html">Projekt 2</a></li>
+			<li><a href="Projekte/projekt3.html">Projekt 3</a></li>
+		</ul>
+
+		<p style="text-align: center">
+			<b> <a href="#">to the top</a></b>
+		</p>
+	</article>
+	<hr>
+</body>
+</html>
